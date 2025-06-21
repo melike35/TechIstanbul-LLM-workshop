@@ -20,6 +20,8 @@ llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash")
 qa_chain = ConversationalRetrievalChain.from_llm(
     llm=llm,
     retriever=retriever,
+    verbose=True,
+    return_source_documents=True,
     memory=memory
 )
 

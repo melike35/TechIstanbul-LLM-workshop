@@ -1,3 +1,7 @@
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_google_genai.embeddings import GoogleGenerativeAIEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -40,4 +44,3 @@ if __name__=='__main__':
     print(len(split_documents))
     # 111
     print(split_documents[:5])
-    
