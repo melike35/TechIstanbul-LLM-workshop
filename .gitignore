@@ -39,7 +39,7 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 $RECYCLE.BIN/
-
+myenv/
 
 .idea/
 .vscode/*
@@ -52,3 +52,6 @@ $RECYCLE.BIN/
 .classpath
 .settings/
 *.swp
+__pycache__/
+*.pyc
+.env
